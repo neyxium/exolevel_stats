@@ -1,6 +1,6 @@
 import requests
 import json
-response = requests.get("https://exo.lgms.nl/?api&list=userlevels")
+response = requests.get("https://exo.lgms.nl/?asJson&list=userlevels")
 
 
 def jprint(obj):
@@ -9,4 +9,3 @@ def jprint(obj):
     file.write(text)
 
 jprint(response.json())
-
